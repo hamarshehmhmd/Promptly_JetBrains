@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+    <id>com.promptly.plugin</id>
+    <name>Promptly</name>
+    <vendor email="support@promptly.com" url="https://github.com/promptly">Promptly</vendor>
+
+    <description><![CDATA[
+    Promptly is a JetBrains IDE plugin that integrates Large Language Models (LLMs) directly into your coding environment.
+    <ul>
+        <li>Connect to your preferred LLM (OpenAI, Anthropic, Google, etc.)</li>
+        <li>Chat with AI directly within your IDE</li>
+        <li>Generate and insert code snippets from AI suggestions</li>
+        <li>Provide context-aware assistance based on your current project</li>
+        <li>Securely store your API keys locally</li>
+    </ul>
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Tool Windows -->
+        <toolWindow id="Promptly" secondary="true" icon="AllIcons.General.Modified" anchor="right"
+                    factoryClass="com.promptly.plugin.ui.PrompltyChatToolWindowFactory"/>
+    </extensions>
+</idea-plugin> 
