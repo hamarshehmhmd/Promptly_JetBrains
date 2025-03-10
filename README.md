@@ -35,7 +35,7 @@ Promptly integrates LLMs directly into your JetBrains IDE, allowing seamless int
 
 Build from source:
 ```bash
-git clone 
+git clone https://www.github.com/hamarshehmhmd/Promptly_JetBrains.git 
 ./gradlew build
 ./gradlew runIde
 ```
